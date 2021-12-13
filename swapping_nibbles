@@ -1,0 +1,16 @@
+//swap two nibble of byte
+#include <stdio.h>
+int main()
+{ 
+    int data,upper_nibble,lower_nibble;
+    
+    printf("enter data:");
+    scanf("%d",&data);
+    
+    upper_nibble=data&0xf0;
+    lower_nibble=data&0x0f;
+    printf("swapped data:%d ",(upper_nibble>>4)|(lower_nibble<<4));
+    
+    return 0;
+    
+}
