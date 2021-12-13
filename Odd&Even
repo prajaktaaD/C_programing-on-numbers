@@ -1,0 +1,25 @@
+//c_program to find even and odd numbers
+#include<stdio.h>
+int num,i;
+int main(){
+    printf("enter value of n in 1 to n");
+    scanf("%d",&num);
+    printf("the even num:");
+    for(i=0;i<=num;i++)
+    {if(i%2==0)
+    printf("%d ",i);
+    
+    
+    }
+   
+    printf("the odd num:");
+    for(i=0;i<=num;i++)
+    {if(i%2!=0)
+    printf("%d ",i);
+    
+    
+    }
+    return 0;
+}    
+    
+    
