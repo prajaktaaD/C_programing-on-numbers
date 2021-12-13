@@ -1,0 +1,17 @@
+//check prime numbers between 1 to N
+#include<stdio.h>
+int num,i,f=1;
+int main(){
+    printf("enter_ Value(N)");
+    scanf("%d",&num);
+    for(i=1;i<=num;i++)
+    f=f*i;
+    
+    printf("fact of num:%d",f);
+    
+  
+    
+    
+    return 0;
+}    
+    
