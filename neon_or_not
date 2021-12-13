@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{ 
+    int num,p,r,s=0;
+    
+    printf("enternum:");
+    scanf("%d",&num);
+    p=num*num;
+    printf(" square:%d",num*num);
+
+    while(p!=0)
+    {
+       r=p%10;
+       s=s+r;
+       p=p/10;
+    }
+    printf("sum=%d",s);
+    if(s==num)
+    printf("neon!");
+    
+    else
+    printf("not neon!");
+    return 0;
+}
