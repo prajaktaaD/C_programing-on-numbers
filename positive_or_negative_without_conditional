@@ -1,0 +1,18 @@
+//positive or negetive not using coditional statement:
+#include <stdio.h>
+#define BITS sizeof(int)*8
+int main()
+{ 
+    int num,cnt=0,x;
+    char*str[]={"negetive","zero","positive"};
+    
+    printf("enter num:");
+    scanf("%d",&num);
+    
+    x=1+(num>>(BITS-1))-(-num>>(BITS-1));
+    
+    //printf("%d ",x);
+    printf("%d is %s",num,str[x]);
+    return 0;
+    
+}
