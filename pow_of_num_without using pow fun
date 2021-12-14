@@ -1,0 +1,32 @@
+//calculate pow of num
+#include <stdio.h>
+//#define BITS sizeof(int)*8
+int main()
+{ 
+    int num,power,p=1;
+    
+    
+    printf("enter num:");
+    scanf("%d",&num);
+    
+    printf("enter pow:");
+    scanf("%d",&power);
+    
+    for(int i=1;i<=power;i++)
+    {
+        
+    
+        p=p*num;
+        //p=num;
+        //break;
+    }
+   
+    printf("result:%d",p);
+    return 0;
+    
+}
+
+
+
+
+    
