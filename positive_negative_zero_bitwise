@@ -1,0 +1,26 @@
+//program to find weather the num is positive negative or zero using bitwise operator::
+#include <stdio.h>
+int main()
+{ 
+    int num,cnt=0,x;
+    
+    printf("enter num:");
+    scanf("%d",&num);
+    
+    cnt=1+(num>>31)-(-num>>31);
+    
+    if(cnt==2)
+    printf("positive!");
+    
+    else if(cnt==1)
+    printf("zero!");
+    
+    else
+    printf("negetive!");
+    
+    return 0;
+   
+    
+
+    
+}
