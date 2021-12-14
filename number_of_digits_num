@@ -1,0 +1,19 @@
+//calculate digits of number
+#include <stdio.h>
+int main()
+{ 
+    int num,cnt=0,x;
+    
+    printf("enter num:");
+    scanf("%d",&num);
+    while(num!=0)
+    {
+      x=num%10;
+      num=num/10;
+      cnt++;
+    }
+    printf("number of digits in num:%d",cnt);
+    
+    return 0;
+    
+}
