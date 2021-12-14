@@ -1,0 +1,32 @@
+#include <stdio.h>
+//#define BITS sizeof(int)*8
+int main()
+{ 
+    int num,i,s=0;
+    
+    
+    printf("enter num:");
+    scanf("%d",&num);
+    
+    for(int i=1;i<num;i++)
+    {
+        if(num%i==0)
+        {printf("%d ",i);
+         s=s+i;
+        } 
+        
+        //break;
+    }
+   
+    if(s==num)
+    printf("perfect_num!");
+    
+    else
+    printf("not_perfect_num!");
+    //printf("%d ",x);
+    //printf("%d is %s",num,str[x]);
+    return 0;
+    
+}
+
+
