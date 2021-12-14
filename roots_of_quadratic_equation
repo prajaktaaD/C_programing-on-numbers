@@ -1,0 +1,48 @@
+//calculate roots of quadratic equation
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{ 
+    int a,b,c,d,p=1;
+    
+    
+    printf("enter value of a:");
+    scanf("%d",&a);
+    
+    printf("enter value of b:");
+    scanf("%d",&b);
+    
+    printf("enter value of c:");
+    scanf("%d",&c);
+    
+    d=pow(b,2)-4*a*c;
+    
+    if(d>0)
+    {
+        printf("roots are possitive and different:");
+        printf("roots r1:%f",(b+sqrt(d))/(2*c));
+        printf("roots r2:%f",(b-sqrt(d))/(2*c));
+    }
+    
+    else if(d==0)
+    {
+        printf("roots are same:");
+        printf("roots r1:%f",(b+sqrt(d))/(2*c));
+        //printf("roots r2:%f",(b-sqrt(d))/(2*c));
+    }
+    
+    else if(d<0)
+    {
+        printf("roots are imaginery:");
+        printf("roots r1:%f+%fi",(b+sqrt(abs(d)))/(2*c));
+        printf("roots r1:%f+%fi",(b-sqrt(abs(d)))/(2*c));
+        
+        //printf("roots r2:%f",(b-sqrt(d))/(2*c));
+    }
+    
+    return 0;
+    
+}
+
+
